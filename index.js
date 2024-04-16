@@ -26,9 +26,12 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(flash());
 app.use(session({ secret: "Botir", resave: false, saveUninitialized: false }));
+app.use(varMiddleware);
+
+
 app.use(AuthRoutes);
 app.use(ProductsRoutes);
-app.use(varMiddleware);
+
 const appStart = () => {
   try {
     mongoose.connect(process.env.MONGO_URL);

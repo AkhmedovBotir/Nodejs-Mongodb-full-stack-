@@ -5,7 +5,7 @@
     >
       <a
         href="/"
-        class="d-flex align-items-center link-body-emphasis text-decoration-none"
+        class="d-flex align-items-center text-dark text-decoration-none"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -26,19 +26,19 @@
       <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
 
         {{#if isProduct}}
-          <a class="me-3 py-2 link-body-emphasis" href="/products">Products</a>
+          <a class="me-3 py-2 text-dark" href="/products">Products</a>
         {{else}}
           <a
-            class="me-3 py-2 link-body-emphasis text-decoration-none"
+            class="me-3 py-2 text-dark text-decoration-none"
             href="/products"
           >Products</a>
         {{/if}}
 
         {{#if isAdd}}
-          <a class="me-3 py-2 link-body-emphasis" href="/add">Add</a>
+          <a class="me-3 py-2 text-dark" href="/add">Add</a>
         {{else}}
           <a
-            class="me-3 py-2 link-body-emphasis text-decoration-none"
+            class="me-3 py-2 text-dark text-decoration-none"
             href="/add"
           >Add</a>
         {{/if}}
@@ -49,25 +49,25 @@
           aria-label="Basic mixed styles example"
         >
           {{#if token}}
-              <button type="button" class="btn btn-danger active">
-                <a
-                  href="/logout"
-                  class="text-light text-decoration-none"
-                >Logout</a>
-              </button>
+            <button type="button" class="btn btn-danger active">
+              <a
+                class="text-light text-decoration-none"
+                href="/logout"
+              >Logout</a>
+            </button>
           {{else}}
             {{#if isLogin}}
               <button type="button" class="btn btn-primary active">
                 <a
-                  href="/login"
                   class="text-light text-decoration-none"
+                  href="/login"
                 >Login</a>
               </button>
             {{else}}
               <button type="button" class="btn btn-primary">
                 <a
-                  href="/login"
                   class="text-light text-decoration-none"
+                  href="/login"
                 >Login</a>
               </button>
             {{/if}}
@@ -75,15 +75,15 @@
             {{#if isRegister}}
               <button type="button" class="btn btn-success active">
                 <a
-                  href="/register"
                   class="text-light text-decoration-none"
+                  href="/register"
                 >Register</a>
               </button>
             {{else}}
               <button type="button" class="btn btn-success">
                 <a
-                  href="/register"
                   class="text-light text-decoration-none"
+                  href="/register"
                 >Register</a>
               </button>
             {{/if}}
